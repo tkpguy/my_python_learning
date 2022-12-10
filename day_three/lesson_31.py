@@ -11,8 +11,10 @@ if(height > 120):
     print(f"\n\tHey {name} you can ride and get the ticket")
     if(age > 18):
         print(f"\tYour ticket cost is $12\n")
-    else:
+    elif(age >= 12 and age < 18):
         print(f"\tYour ticket cost is $7\n")
+    else:
+        print(f"\tYour ticket cost is $5\n")
 else:
     print(f"\n\tHey {name} you can't ride. You gotta grow up!\n")
     
